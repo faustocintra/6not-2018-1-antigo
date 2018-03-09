@@ -1,4 +1,6 @@
-<ion-menu id="leftMenu" [content]="content" side="left" type="overlay">
+<ion-nav [root]="rootPage"></ion-nav>
+
+<ion-menu id="leftMenu" [content]="content" side="left" type="reveal">
 
    <ion-header>
 
@@ -39,7 +41,7 @@
          </button>
       </ion-list>
    
-      <ion-card *ngIf="text">
+      <ion-card *ngIf="text" (click)="hideCard()">
          <ion-card-content>
             Você acabou de clicar em {{text}}.
          </ion-card-content>

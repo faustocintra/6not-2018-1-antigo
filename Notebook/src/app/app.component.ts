@@ -12,6 +12,7 @@ import { ProductsPage } from '../pages/products/products';
 @Component({
   templateUrl: 'app.html'
 })
+
 export class MyApp {
   @ViewChild(Nav) nav : Nav;
   text : string = '';
@@ -42,6 +43,10 @@ export class MyApp {
 
   rightMenuClick(text : string) {
     this.text = text;
+  }
+
+  hideCard() {
+    this.text = '';
   }
 
 }

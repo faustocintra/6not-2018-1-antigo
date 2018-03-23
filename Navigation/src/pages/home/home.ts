@@ -9,7 +9,7 @@ import { OtherPage } from './../other/other';
 export class HomePage {
 
   public minhaString : string = 'Exemplo 1 - isso é só uma string';
-  public meuJSON : any = { text: ''};
+  public meuJSON : any = { text: '', number: 0x77};
   otherPage : any = OtherPage;
 
   constructor(public navCtrl: NavController) {

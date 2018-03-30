@@ -2,3 +2,4 @@ dev-server64.box
 node_modules
 .vagrant
 .vscode
+loja/.git
